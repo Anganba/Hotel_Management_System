@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="654.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.hms.checkinController">
+   <children>
+      <AnchorPane fx:id="checkin_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="151.0" layoutY="265.0" prefHeight="654.0" prefWidth="489.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="34.0" prefWidth="489.0" styleClass="top-form" stylesheets="@dashboardDesign.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button layoutX="458.0" layoutY="4.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="24.0" prefWidth="43.0" styleClass="close" stylesheets="@dashboardDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="CLOSE" size="1.2em" />
+                           </graphic>
+                        </Button>
+                        <Button layoutX="411.0" layoutY="3.4" mnemonicParsing="false" onAction="#minimize" prefHeight="24.0" prefWidth="34.0" styleClass="minimize" stylesheets="@dashboardDesign.css" AnchorPane.topAnchor="3.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="MINUS" />
+                           </graphic>
+                        </Button>
+                        <FontAwesomeIcon fill="#170680" glyphName="KEY" layoutX="14.0" layoutY="28.0" size="2em" />
+                        <Label layoutX="43.0" layoutY="8.0" text="Hotel Management System | Check In">
+                           <font>
+                              <Font name="Consolas" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="168.0" layoutY="167.0" prefHeight="620.0" prefWidth="489.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="597.0" prefWidth="463.0" stylesheets="@dashboardDesign.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="lastName" layoutX="281.0" layoutY="159.0" prefHeight="26.0" prefWidth="150.0" styleClass="textfield" stylesheets="@dashboardDesign.css" />
+                                    <Label layoutX="74.0" layoutY="44.0" text="Check In">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="29.0" />
+                                       </font>
+                                    </Label>
+                                    <FontAwesomeIcon fill="#060661" glyphName="KEY" layoutX="32.0" layoutY="72.0" size="3em" />
+                                    <Label layoutX="232.0" layoutY="47.0" text="Customer #">
+                                       <font>
+                                          <Font name="Consolas" size="21.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="customerNumber" alignment="TOP_LEFT" layoutX="352.0" layoutY="47.0" prefHeight="26.0" prefWidth="108.0" text="1">
+                                       <font>
+                                          <Font name="Consolas" size="21.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="33.0" layoutY="141.0" text="First Name">
+                                       <font>
+                                          <Font name="Consolas" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="firstName" layoutX="32.0" layoutY="159.0" prefHeight="26.0" prefWidth="150.0" styleClass="textfield" stylesheets="@dashboardDesign.css" />
+                                    <Label layoutX="282.0" layoutY="141.0" text="Last Name">
+                                       <font>
+                                          <Font name="Consolas" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="34.0" layoutY="206.0" text="Phone Number">
+                                       <font>
+                                          <Font name="Consolas" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="phoneNumber" layoutX="33.0" layoutY="224.0" prefHeight="26.0" prefWidth="150.0" styleClass="textfield" stylesheets="@dashboardDesign.css" />
+                                    <Label layoutX="283.0" layoutY="206.0" text="Email Address">
+                                       <font>
+                                          <Font name="Consolas" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="email" layoutX="282.0" layoutY="224.0" prefHeight="26.0" prefWidth="150.0" styleClass="textfield" stylesheets="@dashboardDesign.css" />
+                                    <Label layoutX="34.0" layoutY="361.0" text="Check In Date">
+                                       <font>
+                                          <Font name="Consolas" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="283.0" layoutY="361.0" text="Check Out Date">
+                                       <font>
+                                          <Font name="Consolas" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker fx:id="checkin_Date" layoutX="33.0" layoutY="391.0" promptText="MM-DD-YYYY" />
+                                    <DatePicker fx:id="checkout_Date" layoutX="282.0" layoutY="391.0" onAction="#totalDays" promptText="MM-DD-YYYY" />
+                                    <Button layoutX="48.0" layoutY="532.0" mnemonicParsing="false" onAction="#reset" prefHeight="56.0" prefWidth="140.0" styleClass="clear-BTN" stylesheets="@dashboardDesign.css" text="Reset" />
+                                    <Button layoutX="265.0" layoutY="532.0" mnemonicParsing="false" onAction="#customerCheckIn" prefHeight="56.0" prefWidth="150.0" styleClass="check-in-BTN" stylesheets="@dashboardDesign.css" text="Check In" />
+                                    <Label layoutX="262.0" layoutY="449.0" text="Total Days">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="306.0" layoutY="485.0" text="Total">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="totalDays" alignment="TOP_LEFT" layoutX="358.0" layoutY="447.0" prefHeight="30.0" prefWidth="100.0" text="---">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="total" layoutX="358.0" layoutY="481.0" prefHeight="30.0" prefWidth="99.0" text="\$0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="34.0" layoutY="269.0" text="Room Type">
+                                       <font>
+                                          <Font name="Consolas" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="283.0" layoutY="269.0" text="Room #">
+                                       <font>
+                                          <Font name="Consolas" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="roomType" layoutX="32.0" layoutY="305.0" onAction="#roomTypeList" prefWidth="150.0" styleClass="combo-box" stylesheets="@dashboardDesign.css" />
+                                    <ComboBox fx:id="roomNumber" layoutX="282.0" layoutY="305.0" onAction="#roomNumberList" prefWidth="150.0" styleClass="combo-box" stylesheets="@dashboardDesign.css" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

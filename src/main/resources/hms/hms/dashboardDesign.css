@@ -1,0 +1,172 @@
+.top-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width:.4px .4px 0px .4px;
+}
+.main-top-form{
+    -fx-background-color:#ddd;
+    -fx-border-color:#000;
+    -fx-border-width:0px 0px .4px 0px;
+}
+
+
+.nav-form{
+    -fx-background-color:linear-gradient(to bottom right, #1c085e,#52066b);
+}
+.nav-BTN{
+    -fx-background-color:trasnparent;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-font-family:"Consolas";
+    -fx-alignment:CENTER_LEFT;
+}
+.nav-BTN:hover{
+    -fx-background-color:#52066b;
+
+}
+
+.white-bg{
+    -fx-background-color:#fff;
+    -fx-background-radius:10px;
+}
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.4),4,0,0,0);
+}
+
+.card{
+    -fx-background-color:linear-gradient(to right, #146c8f,#042e5c);
+    -fx-background-radius:5px;
+}
+
+.close{
+    -fx-background-color:tranparent;
+    -fx-cursor:hand;
+}
+.close:hover{
+    -fx-background-color:linear-gradient(to bottom, #1c085e,#52066b);
+}
+.minimize{
+    -fx-background-color:tranparent;
+    -fx-cursor:hand;
+}
+.minimize:hover{
+    -fx-background-color:linear-gradient(to bottom, #1c085e,#52066b);
+}
+
+.textfield{
+    -fx-background-color:#fff;
+    -fx-border-color:linear-gradient(to right, #146c8f,#042e5c);
+    -fx-border-width:0px 0px .8px 0px;
+    -fx-font-size:13px;
+    -fx-font-family:"Consolas";
+}
+.textfield:focused{
+    -fx-background-color:linear-gradient(to bottom right, #9ac6f5,#dce8f5);
+    -fx-border-width:0px 0px 1.5px 0px;
+}
+
+.combo-box{
+    -fx-background-color:#fff;
+    -fx-background-radius:5px;
+    -fx-border-color:linear-gradient(to right, #146c8f,#042e5c);
+    -fx-border-width:.8px;
+    -fx-border-radius:.5px;
+    -fx-font-size:13px;
+    -fx-font-family:"Consolas";
+}
+.combo-box:focused{
+    -fx-border-color:linear-gradient(to bottom right, #9ac6f5,#dce8f5);
+    -fx-border-width:1.5px;
+}
+
+.add-BTN{
+    -fx-background-color:#2775f2;
+    -fx-background-radius:5px;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-font-family:"Consolas";
+}
+.add-BTN:hover{
+    -fx-background-color:#13366e;
+}
+
+.update-BTN{
+    -fx-background-color:#5b1cba;
+    -fx-background-radius:5px;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-font-family:"Consolas";
+}
+.update-BTN:hover{
+    -fx-background-color:#350b75;
+}
+
+.clear-BTN{
+    -fx-background-color:#b110de;
+    -fx-background-radius:5px;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-font-family:"Consolas";
+}
+.clear-BTN:hover{
+    -fx-background-color:#57076e;
+}
+.delete-BTN{
+    -fx-background-color:#b0054a;
+    -fx-background-radius:5px;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-font-family:"Consolas";
+}
+.delete-BTN:hover{
+    -fx-background-color:#6e0730;
+}
+.check-in-BTN{
+    -fx-background-color:#77d907;
+    -fx-background-radius:5px;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-font-family:"Consolas";
+}
+.check-in-BTN:hover{
+    -fx-background-color:#417505;
+}
+
+.table-view{
+    -fx-background-color:transparent;
+    -fx-padding:0px;
+    -fx-border-color:linear-gradient(to bottom right, #1c085e,#52066b);
+    -fx-border-radius:8px;
+}
+.table-view .column-header-background{
+    -fx-background-color:linear-gradient(to bottom right, #1c085e,#52066b);
+    -fx-background-insets:0 0 0 0;
+}
+.table-view .column-header, .filter{
+    -fx-background-color:transparent;
+    -fx-size:50px;
+
+}
+.table-view .column-header .label{
+    -fx-text-fill:#fff;
+}
+.search{
+    -fx-background-color:transparent;
+    -fx-background-radius:15px;
+    -fx-border-color:linear-gradient(to bottom right, #1c085e,#52066b);
+    -fx-border-radius:15px 15px 15px 15px;
+    -fx-border-width:1px;
+    -fx-padding:0px 0px 0px 25px;
+
+}
+.search-focused{
+    -fx-border-width:1.8px;
+}
+
+

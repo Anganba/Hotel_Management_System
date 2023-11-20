@@ -1,0 +1,43 @@
+.white-bg{
+    -fx-background-color:#ffff;
+    -fx-border-color:#000;
+    -fx-border-width:.5px .5px .5px 0px;
+}
+
+.left-form{
+    -fx-background-color:linear-gradient(to bottom right, #1c085e,#52066b);
+    -fx-border-color:#000;
+    -fx-border-width:.5px 0px .5px .5px;
+}
+
+.textfield{
+    -fx-background-color:transparent;
+    -fx-border-color:#3b1257;
+    -fx-border-width:0px 0px .8px 0px;
+    -fx-font-size:13px;
+    -fx-font-family:"Consolas";
+}
+.textfield:focused{
+    -fx-border-color:linear-gradient(to bottom right, #1c085e,#52066b);
+    -fx-border-width:0px 0px 1.5px 0px;
+}
+
+.login-button{
+    -fx-background-color:linear-gradient(to bottom, #290c32,#5f1179);
+    -fx-background-radius: 15px 15px 15px 15px;
+    -fx-text-fill:#ffff;
+    -fx-font-size:14px;
+    -fx-font-family:"Consolas";
+    -fx-cursor:hand;
+}
+.login-button:hover{
+    -fx-background-color:linear-gradient(to bottom, #1c085e,#52066b);
+}
+
+.close{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+.close:hover{
+    -fx-background-color:linear-gradient(to bottom, #1c085e,#52066b);
+}
